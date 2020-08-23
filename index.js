@@ -132,6 +132,7 @@ const TinderCard = ({ flickOnSwipe = true, children, onSwipe, onCardLeftScreen, 
         if (!preventSwipe.includes(dir)) {
           await animateOut(element, speed)
           element.style.display = 'none'
+          console.log('Hello this is fork test');
           if (onCardLeftScreen) onCardLeftScreen(dir)
           return
         }
